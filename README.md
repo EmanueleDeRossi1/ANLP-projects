@@ -1,0 +1,1 @@
+These are the projects for ANLP that I did during my master's.
