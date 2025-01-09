@@ -68,27 +68,3 @@ def f_1(classifier, data):
             
 
     ################################################################
-
-### test your functions
-
-# import numpy as np
-
-# test_data = [1, 1, 0, 1, 0]
-
-# def test_predict(input_data):
-    
-#     predictions = []
-    
-#     for i in input_data:
-#         pred = np.random.choice([0, 1])
-#         predictions.append(pred)
-        
-#     return predictions
-
-# test_predictions = test_predict(test_data)
-
-# print("predictions", test_predictions)
-# print("true labels", test_data)
-
-# #print(accuracy(test_predictions, test_data))
-# print(f_1(test_predictions, test_data))

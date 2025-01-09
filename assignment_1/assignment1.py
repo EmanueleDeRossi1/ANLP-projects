@@ -59,30 +59,11 @@ def main():
 
 
 if __name__ == "__main__":
-    (train_data, test_data) = read_hate_tweets(TWEETS_ANNO, TWEETS_TEXT)
+    train_data, test_data = read_hate_tweets(TWEETS_ANNO, TWEETS_TEXT)
+    print("Training naive bayes classifier...")
     print(train_feature_eng(train_data, test_data))
     nb = NaiveBayes.train(train_data)
     print("Accuracy: ", accuracy(nb, test_data))
     print("F_1: ", f_1(nb, test_data))
     
-        
-    # nb = NaiveBayes.train(train_data)
-    
-
-    
-    #vocabolario = NaiveBayes.train(train_data)
-    #print(vocabolario)
-    
-    #for idx, 
-    
-    #prediction = nb.predict(test_data[128][0])
-    #print("accuracy", accuracy(nb, test_data)) 
-    #print("f-1 score: ", f_1(nb, test_data))
-    # print(train_smooth(train_data, test_data))
-    # for i in range(len(test_data)):
-    #     if nb.predict(test_data[i][0]) == "offensive":
-    #         print("this is offensive")
-    #print(prediction)
-    #pass
-    #main()
    

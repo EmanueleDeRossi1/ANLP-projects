@@ -116,27 +116,3 @@ def featurize(data, train_data=None):
     
     return X, Y
     ##############################################################
-
-X_train = featurize(train_data, train_data)[0]
-Y_train = featurize(train_data, train_data)[1]
-
-X_test = featurize(test_data, train_data)[0]
-Y_test = featurize(test_data, train_data)[1]
-
-
-
-
-
-
-
-logreg = LogReg().train(X_train, Y_train)
-
-
-
-# Get probabilities using the p() method
-#probabilities = logreg.p(X_test[:125])
-predict = logreg.predict(X_test[113:122])
-
-
-#softa = logreg.softmax([12, 6])
-# proba = logreg.p(softa)
